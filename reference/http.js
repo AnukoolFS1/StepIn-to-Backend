@@ -9,9 +9,7 @@ const serverListener = (req, res) => {
 
 const server = http.createServer(serverListener);
 
-console.log(server.constructor);
+server.listen(6557, ()=>console.log('server initiated'));
+// console.log('hi'); // to check if asynchronous capability of .listen Method
 
-
-// server.listen(6557, ()=>console.log('server initiated'));
-// console.log('hi');
 
