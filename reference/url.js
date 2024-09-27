@@ -1,4 +1,4 @@
-const myUrl = new URL('http:9090//anywebsite.com/index.html?name=anukool&age=25&profession=webdeveloper');
+const myUrl = new URL('http://mywebsite.com/index?name=anukool&fname=chauhan');
 
 console.log(myUrl); // ↓
 // URL {
@@ -13,5 +13,5 @@ console.log(myUrl); // ↓
 //     pathname: '//anywebsite.com/index.html',
 //     search: '?name=anukool&age=25&profession=webdeveloper',
 //     searchParams: URLSearchParams { 'name' => 'anukool', 'age' => '25', 'profession' => 'webdeveloper' },
-//     hash: ''
+//     hash: ''z
 //   }
