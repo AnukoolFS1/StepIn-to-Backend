@@ -6,7 +6,7 @@ const path = require('path')
 // Folder Creation
 function mkFolderHandles(err) {
     if (err) console.log(err)
-    console.log('folder created');
+    else console.log('folder created');
 }
 
 // fs.mkdir(path.join(__dirname, '/test'), mkFolderHandles)
@@ -36,3 +36,30 @@ function mkFolderHandles(err) {
 // path.join(__dirname, '/test', 'test1.js'),
 // (err)=>{console.log('filerenamed');
 // });
+
+// make directory (folder)
+// fs.mkdir(path.join(__dirname, "test2"), mkFolderHandles);
+
+// fs.writeFile(path.join(__dirname, "test2", "node.js"), "console.log('hello node')",
+//     (error) => {
+//         if (error) {
+//             console.log(error)
+//         } else {
+//             console.log('file has written')
+//         }
+//     }
+// )
+
+fs.readFile(path.join(__dirname,"test2","node.js"), "utf-8", (err, data) => {
+    if(err){
+        console.log(err)
+    }else console.log(data)
+})
+
+fs.rename(path.join(__dirname, "test2", "node.js"),
+path.join(__dirname, "test2", "node1.js"),
+err => {
+    if(err) console.log(err)
+        else console.log('file renamed')
+}
+)
