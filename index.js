@@ -3,7 +3,7 @@ console.log('starting backend');
 //-----------url
 const url = new URL('http://mywebsite.com/index.html?name=anukool&sname=chauhan&age=25')
 
-// console.log(url)
+console.log(url)
 // href = 'http://mywebsite.com/index.html?name=anukool&sname=chauhan&age=25'
 // origin = 'http://mywebsite.com'
 // protocol = 'http'
@@ -18,21 +18,21 @@ const url = new URL('http://mywebsite.com/index.html?name=anukool&sname=chauhan&
 //------------path
 const path = require('path');
 
-// //filename
-// console.log(__filename)
+//filename
+console.log(__filename)
 
-// //directory
-// console.log(__dirname)
+//directory
+console.log(__dirname)
 
-// //ext
-// console.log(path.extname(__filename))
-// //basename
-// console.log(path.basename(__filename))
-// //parse
-// console.log(path.parse(__filename))
+//ext
+console.log(path.extname(__filename))
+//basename
+console.log(path.basename(__filename))
+//parse
+console.log(path.parse(__filename))
 
-// // join
-// console.log(path.join(__dirname, "/test", "text.txt"))
+// join
+console.log(path.join(__dirname, "/test", "text.txt"))
 
 
 const fs = require('fs');
@@ -49,11 +49,10 @@ const fs = require('fs');
 //     else console.log('file has been created')
 // })
 
-
-// fs.readFile(path.join(__dirname, "test", "text.txt"), "UTF-8", (err, data) => {
-//     if(err) console.log("error occured");
-//     else console.log(data)
-// })
+fs.readFile(path.join(__dirname, "test", "text.txt"), "UTF-8", (err, data) => {
+    if(err) console.log("error occured");
+    else console.log(data)
+})
 
 // fs.rename(path.join(__dirname, "test", "text.txt"),
 //     path.join(__dirname, "test", "test.txt"),
@@ -64,11 +63,10 @@ const fs = require('fs');
 
 const os = require('os')
 
-// console.log(os.arch())
-// console.log(os.cpus().length) // cores
-// console.log(os.machine())
-// console.log(os.version()) os name like windows
-
+console.log(os.arch())
+console.log(os.cpus().length) // cores
+console.log(os.machine())
+console.log(os.version()) //os name like windows
 
 const http = require('http');
 
