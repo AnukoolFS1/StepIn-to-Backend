@@ -50,16 +50,21 @@ function mkFolderHandles(err) {
 //     }
 // )
 
-fs.readFile(path.join(__dirname,"test2","node.js"), "utf-8", (err, data) => {
-    if(err){
-        console.log(err)
-    }else console.log(data)
+fs.appendFile(path.join(__dirname, "test", "test1.js"), "`The append work like this`\n", (err, data) => {
+    console.log(err, "hel")
+    console.log(data)
 })
 
-fs.rename(path.join(__dirname, "test2", "node.js"),
-path.join(__dirname, "test2", "node1.js"),
-err => {
-    if(err) console.log(err)
-        else console.log('file renamed')
-}
-)
+// fs.readFile(path.join(__dirname,"test2","node.js"), "utf-8", (err, data) => {
+//     if(err){
+//         console.log(err)
+//     }else console.log(data)
+// })
+
+// fs.rename(path.join(__dirname, "test2", "node.js"),
+// path.join(__dirname, "test2", "node1.js"),
+// err => {
+//     if(err) console.log(err)
+//         else console.log('file renamed')
+// }
+// )
