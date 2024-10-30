@@ -1,10 +1,14 @@
-class PizzaShop {
+const EventEmitter = require('node:events');
+
+class PizzaShop extends EventEmitter {
     constructor() {
+        super()
         this.orderNumber = 0
     }
 
-    order(){
+    order(size, toppings){
         this.orderNumber++
+        this.emit("order", size, toppings)
     }
 
     displayOrderNumber(){
