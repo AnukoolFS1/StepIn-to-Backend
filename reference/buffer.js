@@ -9,7 +9,14 @@
 // console.log(buffer.toString())
 
 
-const buffer = new Buffer.alloc(10)
-buffer.write("Anukool")
+// const buffer = new Buffer.alloc(10)
+// buffer.write("Anukool")
 
-console.log(buffer)
+// console.log(buffer)
+
+// const buffer = new Buffer.allocUnsafe(5)
+
+// buffer.write("H ello World")
+
+// console.log(buffer)
+
