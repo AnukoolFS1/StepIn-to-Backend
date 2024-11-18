@@ -14,3 +14,5 @@ const writeAbleStream = fs.createWriteStream("./file2.txt")
 //     console.log(chunk)
 //     writeAbleStream.write(chunk)
 // })
+
+readableStream.pipe(writeAbleStream)
