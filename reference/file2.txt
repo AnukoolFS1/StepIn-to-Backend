@@ -1,1 +1,0 @@
-A stream is a sequence of data the is being moved from one point to another over the time.
